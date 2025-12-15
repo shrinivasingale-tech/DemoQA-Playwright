@@ -162,9 +162,9 @@
             - row "Hobbies" [ref=e276]:
               - cell "Hobbies" [ref=e277]
               - cell [ref=e278]
-            - row "Picture Screenshot 2025-11-20 172025.png" [ref=e279]:
+            - row "Picture test-image.png" [ref=e279]:
               - cell "Picture" [ref=e280]
-              - cell "Screenshot 2025-11-20 172025.png" [ref=e281]
+              - cell "test-image.png" [ref=e281]
             - row "Address 789 Oak St" [ref=e282]:
               - cell "Address" [ref=e283]
               - cell "789 Oak St" [ref=e284]

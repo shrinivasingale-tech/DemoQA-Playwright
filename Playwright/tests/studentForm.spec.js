@@ -11,7 +11,7 @@ const testData = {
   dob: '10 Dec 1995',
   subjects: ['Maths', 'English'],
   hobbies: ['Reading', 'Music'],
-  picturePath: "C:\\Users\\shrinivas.ingale_inf\\Pictures\\Screenshots\\Screenshot 2025-11-20 172025.png", 
+  picturePath: require('path').join(__dirname, '../assets/test-image.png'),
   currentAddress: '789 Oak St',
   state: 'NCR',
   city: 'Delhi'
