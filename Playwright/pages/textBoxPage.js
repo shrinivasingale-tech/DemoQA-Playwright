@@ -14,7 +14,7 @@ class TextBoxPage {
   }
 
   async goto() {
-    await this.page.goto('/text-box'); // Uses baseURL from config
+    await this.page.goto('https://demoqa.com/text-box');
   }
 
   async fillForm({ name, email, currentAddress, permanentAddress }) {
