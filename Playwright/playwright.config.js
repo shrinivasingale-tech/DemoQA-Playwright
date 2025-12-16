@@ -3,10 +3,12 @@
 /** @type {import('@playwright/test').PlaywrightTestConfig} */
 const config = {
   testDir: './tests',
-  timeout: 300000,
-  retries: 0,
-  workers: 8, // Run tests in parallel using 8 workers
+  timeout: 90000, // 90 seconds per test
+  retries: 2, // Retry failing tests up to 2 times
   use: {
+    actionTimeout: 30000, // 30 seconds per action
+    navigationTimeout: 60000, // 60 seconds for navigation
+  workers: 8, // Run tests in parallel using 8 workers
     headless: false, // Force headed mode for all browsers
     baseURL: 'https://demoqa.com',
     screenshot: 'only-on-failure',

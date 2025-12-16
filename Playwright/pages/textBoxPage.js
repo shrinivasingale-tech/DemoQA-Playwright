@@ -15,6 +15,7 @@ class TextBoxPage {
 
   async goto() {
     await this.page.goto('https://demoqa.com/text-box');
+    await this.page.waitForLoadState('networkidle');
   }
 
   async fillForm({ name, email, currentAddress, permanentAddress }) {

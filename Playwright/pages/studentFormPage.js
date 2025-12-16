@@ -22,6 +22,7 @@ class StudentFormPage {
 
   async goto() {
     await this.page.goto('https://demoqa.com/automation-practice-form');
+    await this.page.waitForLoadState('networkidle');
     // Remove ads to prevent pointer interception
     await this.page.evaluate(() => {
       const fixedBan = document.getElementById('fixedban');
