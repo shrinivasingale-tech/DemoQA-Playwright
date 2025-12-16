@@ -15,7 +15,7 @@ class DragabblePage {
   }
 
   async goto() {
-    await this.page.goto('https://demoqa.com/dragabble');
+    await this.page.goto('https://demoqa.com/dragabble', { timeout: 120000 });
     await this.page.waitForLoadState('networkidle');
     // Remove ads and overlays to prevent pointer interception
     await this.page.evaluate(() => {

@@ -14,7 +14,7 @@ class TextBoxPage {
   }
 
   async goto() {
-    await this.page.goto('https://demoqa.com/text-box');
+    await this.page.goto('https://demoqa.com/text-box', { timeout: 120000 });
     await this.page.waitForLoadState('networkidle');
   }
 

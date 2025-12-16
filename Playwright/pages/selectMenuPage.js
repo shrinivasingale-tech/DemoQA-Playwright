@@ -11,7 +11,7 @@ class SelectMenuPage {
   }
 
   async goto() {
-    await this.page.goto('https://demoqa.com/select-menu');
+    await this.page.goto('https://demoqa.com/select-menu', { timeout: 120000 });
     await this.page.waitForLoadState('networkidle');
     // Remove ads to prevent pointer interception
     await this.page.evaluate(() => {
